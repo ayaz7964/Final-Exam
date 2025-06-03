@@ -56,7 +56,7 @@ export default function TrafficLightSimultor() {
             width: "80px",
             height: "80px",
             borderRadius: "50%",
-            backgroundColor: color === "green" ? "green" : "white",
+            backgroundColor: color === "green" ? "" : "white",
           }}></div>
         </div>
       </div>
