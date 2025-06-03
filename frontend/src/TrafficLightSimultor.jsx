@@ -17,8 +17,8 @@ export default function TrafficLightSimultor() {
   }, []);
 
   return (
-    <>
-      <h1>Traffic Light Simulator</h1>
+ 
+      <><h1 style={{display : "inline-block"}}>Traffic Light Simulator</h1>
       <div
         style={{
           display: "flex",
@@ -27,6 +27,7 @@ export default function TrafficLightSimultor() {
           height: "100vh",
         }}
       >
+       
         <div
           style={{
             width: "100px",
@@ -37,29 +38,29 @@ export default function TrafficLightSimultor() {
             flexDirection: "column",
             justifyContent: "space-around",
             alignItems: "center",
-            backgroundColor: "black"
+            backgroundColor: "rgb(76, 75, 81)"
           }}
         >
           <div style={{
             width: "80px",
             height: "80px",
             borderRadius: "50%",
-            backgroundColor: color === "red" ? "red" : "white",
+            backgroundColor: color === "red" ? "red" : "lightgray",
           }}></div>
           <div style={{
             width: "80px",
             height: "80px",
             borderRadius: "50%",
-            backgroundColor: color === "yellow" ? "yellow" : "white",
+            backgroundColor: color === "yellow" ? "yellow" : "lightgray",
           }}></div>
           <div style={{
             width: "80px",
             height: "80px",
             borderRadius: "50%",
-            backgroundColor: color === "green" ? "" : "white",
+            backgroundColor: color === "green" ? "green" : "lightgray",
           }}></div>
         </div>
       </div>
-    </>
+    </> 
   );
 }
